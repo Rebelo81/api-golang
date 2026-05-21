@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { api } from './services/api';
+import { demoProducts } from './data/demoProducts';
 import type { Product } from './types/product';
 import './styles.css';
 
@@ -68,9 +69,10 @@ function App() {
       const [health, list] = await Promise.all([api.health(), api.listProducts()]);
       setApiStatus(health.status === 'ok' ? 'online' : 'offline');
       setProducts(list);
-    } catch (err) {
+    } catch {
       setApiStatus('offline');
-      setError(err instanceof Error ? err.message : 'Não foi possível conectar à Dev Store API.');
+      setProducts(demoProducts);
+      setError('');
     } finally {
       setLoading(false);
     }
@@ -134,23 +136,34 @@ function App() {
     setError('');
 
     try {
-      await Promise.all(
-        cart.map((item) =>
-          api.updateProduct(item.id, {
-            name: item.name,
-            description: item.description ?? '',
-            category: item.category ?? '',
-            image_url: item.image_url ?? '',
-            price: item.price,
-            stock: item.stock - item.quantity,
+      if (apiStatus === 'online') {
+        await Promise.all(
+          cart.map((item) =>
+            api.updateProduct(item.id, {
+              name: item.name,
+              description: item.description ?? '',
+              category: item.category ?? '',
+              image_url: item.image_url ?? '',
+              price: item.price,
+              stock: item.stock - item.quantity,
+            }),
+          ),
+        );
+
+        await loadProducts();
+        notify('Pedido finalizado. Estoque atualizado na API.');
+      } else {
+        setProducts((currentProducts) =>
+          currentProducts.map((product) => {
+            const cartItem = cart.find((item) => item.id === product.id);
+            return cartItem ? { ...product, stock: product.stock - cartItem.quantity } : product;
           }),
-        ),
-      );
+        );
+        notify('Pedido finalizado em modo demonstração.');
+      }
 
       setCart([]);
       setIsCartOpen(false);
-      notify('Pedido finalizado. Estoque atualizado na API.');
-      await loadProducts();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Não foi possível finalizar o pedido.');
     } finally {

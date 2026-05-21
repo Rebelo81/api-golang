@@ -47,3 +47,4 @@ frontend/.env
 
 # Env
 .env
+.vercel

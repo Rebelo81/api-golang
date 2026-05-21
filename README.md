@@ -35,6 +35,28 @@ Se quiser apontar diretamente para outra URL da API, crie um arquivo `frontend/.
 VITE_API_BASE_URL=http://localhost:8080
 ```
 
+## Deploy na Vercel para testes
+
+O projeto já possui `vercel.json` configurado na raiz para publicar o frontend da **Dev Store**.
+
+A aplicação funciona em dois modos:
+
+- **Com backend público**: defina `VITE_API_BASE_URL` na Vercel apontando para a URL da API Go.
+- **Modo demonstração**: se a API não estiver pública, a loja carrega automaticamente 50 produtos demo com imagens reais e o carrinho funciona localmente para apresentação.
+
+### Configuração recomendada na Vercel
+
+1. Acesse <https://vercel.com/new>
+2. Importe o repositório `Rebelo81/api-golang`
+3. Mantenha as configurações detectadas pelo `vercel.json`
+4. Clique em **Deploy**
+
+Se tiver backend publicado, adicione em **Project Settings > Environment Variables**:
+
+```env
+VITE_API_BASE_URL=https://sua-api-publica.com
+```
+
 ## Endpoints
 
 | Método | Rota | Descrição |
