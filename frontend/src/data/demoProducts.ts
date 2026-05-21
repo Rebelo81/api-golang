@@ -203,7 +203,7 @@ export const demoProducts: Product[] = [
     "name": "Anker USB-C Hub 8 em 1",
     "description": "Hub compacto para notebook e trabalho remoto.",
     "category": "Docks",
-    "image_url": "https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://m.media-amazon.com/images/I/71ABk4KbAuL._AC_SL1500_.jpg",
     "price": 399.9,
     "stock": 35,
     "id": 19,
