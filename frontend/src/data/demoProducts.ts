@@ -401,7 +401,7 @@ export const demoProducts: Product[] = [
     "name": "Ergotron LX Monitor Arm",
     "description": "Braço articulado premium para monitor.",
     "category": "Ergonomia",
-    "image_url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://m.media-amazon.com/images/I/61KQVZxXwAL._AC_SL1500_.jpg",
     "price": 999.9,
     "stock": 16,
     "id": 37,
