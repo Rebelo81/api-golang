@@ -489,7 +489,7 @@ export const demoProducts: Product[] = [
     "name": "Orbitkey Desk Mat",
     "description": "Desk mat com organização magnética.",
     "category": "Setup",
-    "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://m.media-amazon.com/images/I/51aHXum3teL._AC_SL1500_.jpg",
     "price": 549.9,
     "stock": 33,
     "id": 45,
