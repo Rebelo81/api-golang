@@ -478,7 +478,7 @@ export const demoProducts: Product[] = [
     "name": "Grovemade Desk Shelf",
     "description": "Prateleira premium para organização minimalista.",
     "category": "Setup",
-    "image_url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://thegadgetflow.com/wp-content/uploads/2022/03/Grovemade-New-Desk-Shelf-with-2-Legs-Added-Storage-01.jpeg",
     "price": 1299.9,
     "stock": 14,
     "id": 44,
