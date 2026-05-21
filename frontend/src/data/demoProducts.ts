@@ -159,7 +159,7 @@ export const demoProducts: Product[] = [
     "name": "Apple Magic Trackpad",
     "description": "Trackpad multi-touch para fluxo minimalista.",
     "category": "Mouses",
-    "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80",
+    "image_url": "/products/apple-magic-trackpad.png",
     "price": 999.9,
     "stock": 14,
     "id": 15,
