@@ -192,7 +192,7 @@ export const demoProducts: Product[] = [
     "name": "CalDigit TS4 Dock",
     "description": "Dock Thunderbolt profissional para setup completo.",
     "category": "Docks",
-    "image_url": "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://m.media-amazon.com/images/I/61RBOqHLI0L._AC_SL1500_.jpg",
     "price": 2999.9,
     "stock": 6,
     "id": 18,
