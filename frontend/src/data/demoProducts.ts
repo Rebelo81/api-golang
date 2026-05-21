@@ -247,7 +247,7 @@ export const demoProducts: Product[] = [
     "name": "Raspberry Pi 5 8GB",
     "description": "Mini computador para labs, IoT e homelab.",
     "category": "Hardware",
-    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://http2.mlstatic.com/D_NQ_NP_788353-CBT106748798891_022026-OO.png",
     "price": 799.9,
     "stock": 28,
     "id": 23,
