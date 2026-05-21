@@ -357,7 +357,7 @@ export const demoProducts: Product[] = [
     "name": "Logitech Brio 4K",
     "description": "Webcam 4K para calls de alta qualidade.",
     "category": "Vídeo",
-    "image_url": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://m.media-amazon.com/images/I/61Dqi6rzJEL._AC_SL1500_.jpg",
     "price": 999.9,
     "stock": 21,
     "id": 33,
