@@ -181,7 +181,7 @@ export const demoProducts: Product[] = [
     "name": "Elgato Stream Deck MK.2",
     "description": "Controle macros, builds, deploys e automações.",
     "category": "Produtividade",
-    "image_url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://images.kabum.com.br/produtos/fotos/232162/stream-deck-elgato-mk-2-usb-c-removivel-15-teclas-lcd-preto-10gba9901_1631907377_original.jpg",
     "price": 1199.9,
     "stock": 10,
     "id": 17,
