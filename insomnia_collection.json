@@ -1,0 +1,153 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-05-20T00:00:00.000Z",
+  "__export_source": "go-crud-backend",
+  "resources": [
+    {
+      "_id": "wrk_go_crud_backend",
+      "_type": "workspace",
+      "name": "Go CRUD Backend",
+      "description": "Coleção Insomnia para testar a API Go CRUD Backend"
+    },
+    {
+      "_id": "env_go_crud_backend_base",
+      "_type": "environment",
+      "parentId": "wrk_go_crud_backend",
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:8080",
+        "product_id": "1"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url",
+          "product_id"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1
+    },
+    {
+      "_id": "fld_health",
+      "_type": "request_group",
+      "parentId": "wrk_go_crud_backend",
+      "name": "Health",
+      "description": "Rotas de status da API",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": 100
+    },
+    {
+      "_id": "fld_products",
+      "_type": "request_group",
+      "parentId": "wrk_go_crud_backend",
+      "name": "Products",
+      "description": "CRUD de produtos",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": 200
+    },
+    {
+      "_id": "req_health_check",
+      "_type": "request",
+      "parentId": "fld_health",
+      "name": "Health Check",
+      "description": "Verifica se a API está online",
+      "method": "GET",
+      "url": "{{ _.base_url }}/health",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": 100
+    },
+    {
+      "_id": "req_products_list",
+      "_type": "request",
+      "parentId": "fld_products",
+      "name": "Listar produtos",
+      "description": "Lista todos os produtos cadastrados",
+      "method": "GET",
+      "url": "{{ _.base_url }}/api/v1/products",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": 100
+    },
+    {
+      "_id": "req_products_create",
+      "_type": "request",
+      "parentId": "fld_products",
+      "name": "Criar produto",
+      "description": "Cria um novo produto",
+      "method": "POST",
+      "url": "{{ _.base_url }}/api/v1/products",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Notebook\",\n  \"description\": \"Notebook para desenvolvimento\",\n  \"price\": 4500.50,\n  \"stock\": 10\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 200
+    },
+    {
+      "_id": "req_products_get_by_id",
+      "_type": "request",
+      "parentId": "fld_products",
+      "name": "Buscar produto por ID",
+      "description": "Busca um produto pelo ID. Altere product_id no ambiente, se necessário.",
+      "method": "GET",
+      "url": "{{ _.base_url }}/api/v1/products/{{ _.product_id }}",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": 300
+    },
+    {
+      "_id": "req_products_update",
+      "_type": "request",
+      "parentId": "fld_products",
+      "name": "Atualizar produto",
+      "description": "Atualiza um produto pelo ID. Altere product_id no ambiente, se necessário.",
+      "method": "PUT",
+      "url": "{{ _.base_url }}/api/v1/products/{{ _.product_id }}",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Notebook Pro\",\n  \"description\": \"Notebook atualizado\",\n  \"price\": 5200.00,\n  \"stock\": 8\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 400
+    },
+    {
+      "_id": "req_products_delete",
+      "_type": "request",
+      "parentId": "fld_products",
+      "name": "Excluir produto",
+      "description": "Remove um produto pelo ID. Altere product_id no ambiente, se necessário.",
+      "method": "DELETE",
+      "url": "{{ _.base_url }}/api/v1/products/{{ _.product_id }}",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": 500
+    }
+  ]
+}
