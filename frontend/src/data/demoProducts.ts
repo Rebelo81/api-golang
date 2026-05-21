@@ -500,7 +500,7 @@ export const demoProducts: Product[] = [
     "name": "Kindle Scribe",
     "description": "Leitura técnica, anotações e documentação.",
     "category": "Produtividade",
-    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://http2.mlstatic.com/D_NQ_NP_946019-CBT110812498465_042026-OO.png",
     "price": 2499.9,
     "stock": 9,
     "id": 46,
