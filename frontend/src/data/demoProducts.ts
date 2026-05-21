@@ -280,7 +280,7 @@ export const demoProducts: Product[] = [
     "name": "YubiKey 5C NFC",
     "description": "Chave de segurança física para contas críticas.",
     "category": "Segurança",
-    "image_url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://http2.mlstatic.com/D_NQ_NP_971618-MLB86228249229_062025-OO.png",
     "price": 549.9,
     "stock": 19,
     "id": 26,
