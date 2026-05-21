@@ -368,7 +368,7 @@ export const demoProducts: Product[] = [
     "name": "Elgato Key Light Air",
     "description": "Iluminação profissional para calls e streaming.",
     "category": "Vídeo",
-    "image_url": "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://m.media-amazon.com/images/I/617mzv+iKjL._AC_SL1500_.jpg",
     "price": 1299.9,
     "stock": 11,
     "id": 34,
