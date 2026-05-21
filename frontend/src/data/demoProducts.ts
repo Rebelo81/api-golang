@@ -511,7 +511,7 @@ export const demoProducts: Product[] = [
     "name": "reMarkable 2",
     "description": "Tablet minimalista para notas e arquitetura.",
     "category": "Produtividade",
-    "image_url": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://m.media-amazon.com/images/I/81DQrMqa-UL._AC_SL1500_.jpg",
     "price": 3299.9,
     "stock": 7,
     "id": 47,
