@@ -93,7 +93,7 @@ export const demoProducts: Product[] = [
     "name": "BenQ ScreenBar Halo",
     "description": "Luminária inteligente para setup noturno.",
     "category": "Setup",
-    "image_url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=900&q=80",
     "price": 899.9,
     "stock": 20,
     "id": 9,
