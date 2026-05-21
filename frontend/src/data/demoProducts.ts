@@ -291,7 +291,7 @@ export const demoProducts: Product[] = [
     "name": "Ledger Nano X",
     "description": "Hardware wallet para ativos digitais.",
     "category": "Segurança",
-    "image_url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80",
+    "image_url": "https://http2.mlstatic.com/D_NQ_NP_972668-MLB111038768669_042026-OO.png",
     "price": 899.9,
     "stock": 13,
     "id": 27,
